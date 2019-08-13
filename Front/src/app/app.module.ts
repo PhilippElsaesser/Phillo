@@ -7,9 +7,10 @@ import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NavbarComponent } from "./navbar/navbar.component";
 import { MainComponent } from "./main/main.component";
+import { SidenavComponent } from './main/sidenav/sidenav.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, MainComponent],
+  declarations: [AppComponent, NavbarComponent, MainComponent, SidenavComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

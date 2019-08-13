@@ -5,7 +5,15 @@ import { Subject } from "rxjs";
   providedIn: "root"
 })
 export class AppStateService {
-  sidenavToggled$ = new Subject();
+  private selectedDate: string;
 
-  constructor() {}
+  public sidenavToggled$ = new Subject();
+
+  public setSelectedDate(date: string) {
+    this.selectedDate = date;
+  }
+
+  public getSelectedDate() {
+    return this.selectedDate;
+  }
 }
