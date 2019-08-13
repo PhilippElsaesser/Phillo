@@ -1,3 +1,4 @@
+import { AppStateService } from "./../app-state.service";
 import { Component, OnInit } from "@angular/core";
 
 @Component({
@@ -6,7 +7,11 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./navbar.component.css"]
 })
 export class NavbarComponent implements OnInit {
-  constructor() {}
+  constructor(private state: AppStateService) {}
 
   ngOnInit() {}
+
+  onToggleSidenav() {
+    this.state.sidenavToggled$.next();
+  }
 }
