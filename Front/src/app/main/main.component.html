@@ -1,6 +1,12 @@
+<button mat-fab class="add-entry-button" color="warn">
+  <mat-icon class="add-entry-icon">add</mat-icon>
+</button>
+
 <mat-sidenav-container class="main-container">
   <mat-sidenav mode="side" #sidenav>
     <app-sidenav></app-sidenav>
   </mat-sidenav>
-  <mat-sidenav-content> </mat-sidenav-content>
+  <mat-sidenav-content>
+    <app-content-layout></app-content-layout>
+  </mat-sidenav-content>
 </mat-sidenav-container>

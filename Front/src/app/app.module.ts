@@ -8,9 +8,10 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NavbarComponent } from "./navbar/navbar.component";
 import { MainComponent } from "./main/main.component";
 import { SidenavComponent } from './main/sidenav/sidenav.component';
+import { ContentLayoutComponent } from './main/content-layout/content-layout.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, MainComponent, SidenavComponent],
+  declarations: [AppComponent, NavbarComponent, MainComponent, SidenavComponent, ContentLayoutComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

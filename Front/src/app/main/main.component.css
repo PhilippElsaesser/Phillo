@@ -3,3 +3,16 @@
   width: 100%;
   height: calc(100% - 64px);
 }
+
+.add-entry-button {
+  position: fixed;
+  z-index: 1000;
+  top: 80px;
+  left: 20px;
+}
+
+.add-entry-icon {
+  font-size: 400%;
+  margin-top: -32px;
+  margin-left: -32px;
+}
