@@ -1,0 +1,9 @@
+<div class="week">
+  <mat-grid-list cols="7" rowHeight="fit" class="h-100">
+    <mat-grid-tile *ngFor="let day of week.days" class="divider" colspan="1">
+      <div class="h-100 w-100 p-2">
+        <app-agenda-day [day]="day"></app-agenda-day>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

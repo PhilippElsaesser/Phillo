@@ -1,0 +1,16 @@
+<h2>{{ day.weekday }}</h2>
+<h5>{{ day.date }}</h5>
+<mat-card
+  *ngFor="let session of day.sessions"
+  class="p-2 mb-2"
+  [ngClass]="{
+    'bg-gray': !session.done,
+    'bg-success': session.type === 'Harmonics' && session.done,
+    'bg-warning': session.type === 'Harmonics' && !session.done
+  }"
+>
+  <mat-card-header>
+    <mat-card-title>{{ session.type }}</mat-card-title>
+    <mat-card-subtitle>{{ session.duration }} Min</mat-card-subtitle>
+  </mat-card-header>
+</mat-card>
